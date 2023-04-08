@@ -1,0 +1,21 @@
+:root {
+    --font-400: 400;
+    --font-500: 500;
+    --font-700: 700;
+    --font-900: 900;
+    --color-primary-light: #5DA0FB;
+    --color-primary-main: #3E8DF7;
+    --color-primary-dark: #1C79F6;
+    --color-secondary-light: #F5CD70;
+    --color-secondary-main: #F5BE41;
+    --color-secondary-dark: #F8B214;
+    --color-white: #FFFFFF;
+    --color-neutral25: #F9F9F9;
+    --color-neutral50: #EAEAEA;
+    --color-neutral100: #BDBDBF;
+    --color-neutral200: #9D9D9F;
+    --color-neutral300: #707174;
+    --color-neutral400: #555559;
+    --color-neutral500: #2A2B2F;
+    --color-black: #000000;
+}
