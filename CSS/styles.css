@@ -35,6 +35,7 @@ body {
 }
 .header__login {
     flex: 1;
+    cursor: pointer;
 }
 .header__login__text {
     color: var(--color-primary-main);
@@ -45,6 +46,7 @@ body {
     flex: 1;
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 .header__logo__image {
     width: 92px;
@@ -76,6 +78,7 @@ body {
     position: fixed;
     left: 16px;
     bottom: 16px;
+    z-index: 2;
 }
 .renew__inner {
     width: 43.56px;
@@ -85,6 +88,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+.renew__outer:hover > .renew__inner{
+    background-color: var(--color-neutral100);
 }
 .renew__text {
     font-size: var(--font-size-overline-Mobile);
@@ -102,6 +113,9 @@ body {
     height: 56px;
     width: 56px;
     background-image: url(../Images/support.svg);
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 50%;
 }
 .main {
     height: 100%;
@@ -187,6 +201,11 @@ body {
     flex-direction: column;
     border: 1px solid var(--color-neutral50);
     border-radius: 24px;
+    transition: all 0.2 ease;
+    cursor: pointer;
+}
+.main__card__body:hover {
+    border: 2px solid var(--color-black);
 }
 .main__card__2__body {
     width: 160px;
@@ -198,6 +217,10 @@ body {
     padding: 0px 16px;
     border: 1px solid var(--color-neutral50);
     border-radius: 16px;
+    cursor: pointer;
+}
+.main__card__2__body:hover {
+    border: 1px solid var(--color-black);
 }
 .main__card__2__image {
     height: 40px;
@@ -299,10 +322,19 @@ body {
 }
 .khesarat__btn {
     height: 40px;
+    cursor: pointer;
     width: 161PX;
     background-color: var(--color-primary-main);
     border-radius: 8px;
     border: none;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+.khesarat__btn:hover {
+    background-color: var(--color-primary-dark);
 }
 .khesarat__button__div {
     display: flex;
@@ -507,6 +539,13 @@ body {
         flex: none;
         padding: 8px 16px;
     }
+    .header__login:hover {
+        border: 1px solid var(--color-primary-main);
+        border-radius: 24px;
+        flex: none;
+        padding: 8px 16px;
+        background-color: var(--color-neutral50);
+    }
     .header__login__text {
         color: var(--color-primary-main);
         font-weight: 700;
@@ -533,6 +572,7 @@ body {
     .header__nav__div {
         display: flex;
         flex-direction: row-reverse;
+        cursor: pointer;
     }
     .header__nav__text {
         color: var(--color-black);
@@ -540,8 +580,14 @@ body {
         font-size: var(--font-size-caption-Desktop);
         line-height: var(--font-LH-caption-Desktop);
     }
+    .header__nav__div:hover > .header__nav__text {
+        color: var(--color-primary-light);
+    }
     .header__nav__icon {
         color: var(--color-neutral300);
+    }
+    .header__nav__div:hover > .header__nav__icon {
+        color: var(--color-primary-light);
     }
     .renew__outer {
         display: flex;
@@ -567,7 +613,6 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        ;
     }
     .renew__text {
         font-size: var(--font-size-overline-Mobile);
