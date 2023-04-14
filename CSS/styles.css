@@ -723,6 +723,9 @@ input {
     font-weight: 500;
     line-height: var(--font-LH-caption-Mobile);
 }
+.pavaraghi__image {
+    cursor: pointer;
+}
 @media screen and (min-width: 960px) {
     .mid__m1__title {
         color: var(--color-primary-main);
